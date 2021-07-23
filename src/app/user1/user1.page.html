@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="color:MediumSeaGreen;">
+      <b>Personal Info</b>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card>
+ <ion-input [(ngModel)]="form.first_name" placeholder="First Name"></ion-input>
+ <ion-input [(ngModel)]="form.last_name" placeholder="Last Name"></ion-input>
+ <ion-input [(ngModel)]="form.number" placeholder="Phone Number"></ion-input>
+ <ion-input [(ngModel)]="form.email" placeholder="Email"></ion-input>
+</ion-card>
+<ion-button color="success" routerLink='/home'>Click here to go back</ion-button>
+<ion-button color="success" (click)="print()" routerLink='/thank-you'>Click here for delivery</ion-button>
+</ion-content>
